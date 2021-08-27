@@ -1,7 +1,13 @@
 *{
-  box-sizing:border-box
+  box-sizing:border-box;
   margin:0;
   padding;0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 header{
@@ -21,6 +27,7 @@ main{
   padding: 10px;
   position: relative;
   background-color: #eee;
+  float: left;
 }
 
 .step-box:last-child{
@@ -32,6 +39,7 @@ main{
   background-image: url(img/flow01.png);
   background-position: bottom;
   background-size: cover;
+  height: 150px;
 }
 
 .step-img2{
@@ -78,9 +86,15 @@ footer{
   }
 
   .step-box{
-    width: 100%;
+    width: 90%;
+    margin:0 auto;
+  	margin-bottom: 20px;
+  	float: non
   }
 
-  .step-img1
+  .step-box:last-child{
+    margin: 0 auto;
+  	margin-bottom: 0;
 }
   
+}
